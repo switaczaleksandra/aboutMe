@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    color: #333;
+    max-width: 1000px;
+    background-color: #fffdfd;
+    padding: 25px;
+    margin: 0 auto;
+    box-sizing:border-box;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.naglowek {
+    color: rgb(148, 22, 131);
+    font-family: 'Montserrat', sans-serif;
+}
+.kariera {
+    color: rgb(148, 22, 131);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.wykształcenie {
+    color: rgb(148, 22, 131);
+    font-family: 'Montserrat', sans-serif;
+}
+.zainteresowania {
+    color: rgb(148, 22, 131);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.zdjęcie {
+    border-radius: 500px;
+    box-shadow: 10px 5px 25px 0px #394C56;
+}
+    
+
+.cointainer {
+    font-family: 'Lato', sans-serif;
+}
+
+.table {
+    width: 100%;
+    font-family: 'Lato', sans-serif; 
+    border-collapse: collapse;
+}
+
+.tableCell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.caption {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: large;
+    color: rgb(148, 22, 131);
+    background-color: #eee;
+}
+
+.tableHeader {
+    color: black;
+    background-color:  rgba(148, 22, 131, 0.436);
+    font-weight: normal;
+}
+
+.tableRow:nth-child(even) {
+    background: #eee;
+}
+
+.tableRow:hover {
+    background-color: #ddd;
+}
+.navigation {
+    list-style: none;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(148, 22, 131);
+    margin-bottom: 0;
+}
+
+.navigationItem {
+    margin: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    color:rgb(7, 7, 7);
+    background-color: rgba(148, 22, 131, 0.436) ;
+    padding: 10px;
+}
+
+.sectionCentered {
+    text-align: center;
+}
+
+.section {
+    padding: 15px 0;
+}
+
+.navigationLink {
+    color: rgb(148, 22, 131);
+    text-decoration: none;
+}
+
+.navigationLink:hover {
+    color:  red;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #2824246f;
+    font-family: 'Lato', sans-serif; 
+    padding: 15px;
+    border: none;
+    font-size: 12px;
+}
+
+.dark {
+    color: #eee;
+    background: #222;
+}
