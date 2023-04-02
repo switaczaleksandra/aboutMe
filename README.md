@@ -1,6 +1,6 @@
 # Website about me - Aleksandra Świtacz
 
-![Ola](https://github.com/switaczaleksandra/homepage/blob/main/images/Ola.jpg?raw=true)
+![Ola](./images/Ola.jpg)
 
 ## Website section:
 - a few words abot me
