@@ -23,6 +23,6 @@
 ![section](./images/section3.jpg)
 
 ### Demo wersion:
-https://switaczaleksandra.github.io/homepage/mojastrona.html
+https://switaczaleksandra.github.io/aboutMe/index.html
 
 ### Have a nice day !
