@@ -9,7 +9,7 @@
 - free time
 - my favorite series on Netflix
 
-## Button, that changes bacground of website
+## Button, that changes background of website
 1. If You want dark background of website click the button "Zmień na ciemny motyw strony"
 ![dark button](./images/button.jpg)
 2. If You want fair background of website click the button "Zmień na jasny motyw strony"
@@ -23,6 +23,6 @@
 ![section](./images/section3.jpg)
 
 ### Demo wersion:
-https://switaczaleksandra.github.io/homepage/mojastrona.html
+https://switaczaleksandra.github.io/aboutMe/index.html
 
 ### Have a nice day !
