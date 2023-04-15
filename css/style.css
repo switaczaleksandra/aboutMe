@@ -20,16 +20,6 @@ html {
     text-align: center;
 }
 
-.subHeader {
-    text-align: left;
-}
-
-.photo {
-    width: 250px;
-    border-radius: 5px;
-    box-shadow: 10px 5px 25px 0px #394C56;
-}
-
 .naglowek {
     color: rgb(148, 22, 131);
     font-family: 'Montserrat', sans-serif;
@@ -48,6 +38,11 @@ html {
     font-family: 'Montserrat', sans-serif;
     
 }
+.zdjęcie {
+    border-radius: 5px;
+    box-shadow: 10px 5px 25px 0px #394C56;
+}
+    
 
 .cointainer {
     font-family: 'Lato', sans-serif;
