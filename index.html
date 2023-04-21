@@ -5,93 +5,145 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aleksandra Świtacz</title>
+  <title>Formularz</title>
   <meta property="og:image" content="images/share.png">
   <link rel="icon" href="images/share.png">
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script defer src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300&display=swap"
     rel="stylesheet">
 </head>
 
 <body class="body">
-  <nav>
-    <ul class="navigation">
-      <li class="navigationItem">
-        <a class="navigationLink" href="#">Home</a>
-      </li>
-      <li class="navigationItem">
-        <a class="navigationLink" href="#o mnie">Parę słów o mnie</a>
-      </li>
-      <li class="navigationItem">
-        <a class="navigationLink" href="#wykształcenie">Wykształcenie</a>
-      </li>
-      <li class="navigationItem">
-        <a class="navigationLink" href="#zainteresowania">Zainteresowania</a>
-      </li>
-      <li class="navigationItem">
-        <a class="navigationLink" href="#tabela">Moje ulubione seriale na Netflixie</a>
-      </li>
-      <li class="navigationItem">
-        <a class="navigationLink" href="#interakcja">Przykładowa interakcja</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
-    <header class="header sectionCentered">
-      <h1 class="naglowek"> ALEKSANDRA ŚWITACZ</h1>
-      <img class="zdjęcie" width=220 src="images/Ola.png" alt="Aleksandra Świtacz">
-    </header>
-    <section id="o mnie" class="section">
-      <h2 class="kariera subHeader">Parę słów o mnie</h2>
-      <p class="container"> Na codzień pracuję jako <strong>Inżynier budowy</strong>. Zajmuję się głównie przedmiarami
-        robót, kosztorysowaniem, zlecam pracę podwykonawcom i nadzoruje relizacje robót. Prowadzę rozliczenia oraz
-        tworzę raporty okresowe z wykonyanych robót. W branży budowlanej pracuję od 2 lat. Interesuje mnie głównie
-        <strong>budownictwo kubaturowe</strong>. Swoją przygodę zaczęłam od pracy jako asystent projektanta.
-      </p>
-    </section>
-    <section id="wykształcenie" class="section">
-      <h2 class="wykształcenie subHeader">Wykształcenie</h2>
-      <p class="container">Z wykształcenia jestem <em> Inżynierem budownictwa</em>. Studia ukończyłam w trybie
-        niestacjonarnym na Politechnice Lubelskiej. </p>
-    </section>
-    <section id="zainteresowania" class="section">
-      <h2 class="zainteresowania subHeader">Co robię w wolnym czasie?</h2>
-      <p class="container">W wolnym czasie trenuję na siłowni, uczę się <strong>programowania</strong> i języka
-        angielskiego. <br> W zimie jeżdżę na snowboardzie, a latem podróżuje do ciepłych krajów. Preferuję aktywny
-        tryb życia.</p>
-    </section>
-    <section id="tabela" class="section"></section>
-    <table class="table">
-      <caption class="caption">MOJE ULUBIONE SERIALE NA NETFLIXIE:</caption>
-      <tr class="tableRow">
-        <th class="tableCell tableHeader" scope="col">Tytuł</th>
-        <th class="tableCell tableHeader" scope="col">Liczba sezonów</th>
-        <th class="tableCell tableHeader" scope="col">Rok produkcji</th>
-      </tr>
-      <tr class="tableRow">
-        <th class="tableCell tableHeader" scope="row">Dynastia</th>
-        <td class="tableCell">4</td>
-        <td class="tableCell">2021</td>
-      </tr>
-      <tr class="tableRow">
-        <th class="tableCell tableHeader" scope="row">Dom z papieru</th>
-        <td class="tableCell">5</td>
-        <td class="tableCell">2019</td>
-      </tr>
-      <tr class="tableRow">
-        <th class="tableCell tableHeader" scope="row">Black mirror</th>
-        <td class="tableCell">2</td>
-        <td class="tableCell">2020</td>
-      </tr>
-    </table>
-    </section>
-    <section id="interakcja" class="section">
-      <button class="button">Zmień na <span class="nextColorName">ciemny</span> motyw strony.</button>
-    </section>
-  </main>
-  <footer class="footer"> Powered by Aleksndra Świtacz </footer>
+  <div class="container">
+    <form class="form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Dane osobowe</legend>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Imię*:
+            </span>
+            <input class="form__field" name="name" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Nazwisko*:
+            </span>
+            <input class="form__field" name="surname" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Wybierz płeć*:
+            </span>
+            <select class="form__field" name="gender" required>
+              <option value="male">Mężczyzna</option>
+              <option value="female">Kobieta</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Data urodzenia:
+            </span>
+            <input class="form__field" name="date" type="date">
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Adres e-mail*:
+            </span>
+            <input class="form__field" type="email" name="email" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Numer telefonu*:
+            </span>
+            <input class="form__field" type="tel" name="tel" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Twój wzrost:
+            </span>
+            <input class="form__field" type="number" name="height" step="5">
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Kilka słów o Tobie:
+            </span>
+            <textarea class="form__field form__field--textarea" name="description"></textarea>
+          </label>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Oczekiwane wynagrodzenie:
+            </span>
+            <input class="form__field" name="carBrand" list="carBrands">
+            <datalist id="carBrands">
+              <option>3-4 tys netto</option>
+              <option>4-6 tys netto</option>
+              <option>6-8 tys netto</option>
+              <option>8-10 tys netto</option>
+            </datalist>
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText">
+              Załącz swoje CV*:
+            </span>
+            <input class="form__field" type="file" name="cv" required>
+          </label>
+        </p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ulubieni wokaliści</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="Bieber"> Justin Bieber
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Timberlake"> Justin Timberlake
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Grande"> Ariana Grande
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="Swift"> Taylor Swift
+            </label>
+          </li>
+          <li>
+            <label>
+              <input  type="checkbox" name="Lipa"> Dua Lipa
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="Wyślij!" class="form__button">
+    </form>
+  </div>
 </body>
 
 </html>

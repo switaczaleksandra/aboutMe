@@ -7,128 +7,68 @@ html {
 }
 
 .body {
-    color: #333;
-    max-width: 1000px;
-    background-color: #fffdfd;
-    padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 700px;
     margin: 0 auto;
-    box-sizing:border-box;
-}
-
-
-.header {
-    text-align: center;
-}
-
-.naglowek {
-    color: rgb(148, 22, 131);
-    font-family: 'Montserrat', sans-serif;
-}
-.kariera {
-    color: rgb(148, 22, 131);
-    font-family: 'Montserrat', sans-serif;
-    
-}
-.wykształcenie {
-    color: rgb(148, 22, 131);
-    font-family: 'Montserrat', sans-serif;
-}
-.zainteresowania {
-    color: rgb(148, 22, 131);
-    font-family: 'Montserrat', sans-serif;
-    
-}
-.zdjęcie {
-    border-radius: 5px;
-    box-shadow: 10px 5px 25px 0px #394C56;
-}
-    
-
-.cointainer {
-    font-family: 'Lato', sans-serif;
-}
-
-.table {
-    width: 100%;
-    font-family: 'Lato', sans-serif; 
-    border-collapse: collapse;
-}
-
-.tableCell {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-.caption {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: large;
-    color: rgb(148, 22, 131);
-    background-color: #eee;
-}
-
-.tableHeader {
+    padding: 0 20px;
     color: black;
-    background-color:  rgba(148, 22, 131, 0.436);
-    font-weight: normal;
 }
 
-.tableRow:nth-child(even) {
-    background: #eee;
+.form__labelText {
+    max-width: 250px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 5px;
 }
 
-.tableRow:hover {
-    background-color: #ddd;
-}
-.navigation {
-    list-style: none;
-    padding-left: 0px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(148, 22, 131);
-    margin-bottom: 0;
-}
-
-.navigationItem {
-    margin: 10px 0;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    color:rgb(7, 7, 7);
-    background-color: rgba(148, 22, 131, 0.436) ;
+.form__field {
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 10px;
+    max-width: 400px;
+    width: 100%;
 }
 
-.sectionCentered {
-    text-align: center;
+.form__field--textarea {
+    resize: vertical;
+    min-height: 50px;
 }
 
-.section {
-    padding: 15px 0;
+.form__field:invalid {
+    background-color: hsl(347, 66%, 95%);
 }
 
-.navigationLink {
-    color: rgb(148, 22, 131);
-    text-decoration: none;
+.form__fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-.navigationLink:hover {
-    color:  red;
-    border-bottom: 1px solid;
-    outline: none;
-}
-
-.button {
-    margin-top: 20px;
-    background-color: #2824246f;
-    font-family: 'Lato', sans-serif; 
-    padding: 15px;
+.form__button {
+    width: 100%;
     border: none;
-    font-size: 12px;
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.dark {
-    color: #eee;
-    background: #222;
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
+}
+
+.form__legend {
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
 }
